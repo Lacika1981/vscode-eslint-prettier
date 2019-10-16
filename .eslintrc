@@ -1,16 +1,21 @@
 {
-  "extends": ["eslint:recommended", "prettier", "prettier/react"],
-  "plugins": [],
-  "parserOptions": {
-    "ecmaVersion": 2018, //using latest JS features, will change as new version comes out
-    "sourceType": "module", // use import, export
-    "ecmaFeatures": {
-      "jsx": true
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 2017,
+		"sourceType": "module",
+		"allowImportExportEverywhere": true,
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"env": {
+		"es6": true
+	},
+	"extends": [
+		"eslint:recommended"
+	],
+	"rules": {
+		"no-unused-vars": ["off", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+		"no-undef": "off"
     }
-  },
-  "env": {
-    "es6": true,
-    "browser": true, // use browser features like setTimeout, window
-    "node": true
-  }
 }
