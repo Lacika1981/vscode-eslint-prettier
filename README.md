@@ -1,4 +1,3 @@
 # vscode-eslint-prettier
 
-These are the files to set prettier and eslint module
-
+Based on Brian Holt Frontendmasters Complete intro to React, v5 course
